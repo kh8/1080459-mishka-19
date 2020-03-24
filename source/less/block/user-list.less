@@ -1,0 +1,141 @@
+.user-list__link {
+  position: relative;
+  display: flex;
+  padding: 28px 0 28px 36px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.user-list__search-icon {
+  width: 18px;
+  height: 18px;
+  padding-right: 18px;
+  opacity: 0.2;
+}
+
+.user-list__search-icon:hover {
+  opacity: 1;
+  fill: @seafoam-blue;
+}
+
+.user-list__search-icon:active {
+  opacity: 0.3;
+  fill: @seafoam-blue;
+}
+
+.user-list__cart-icon {
+  width: 21px;
+  height: 18px;
+  padding-right: 18px;
+  opacity: 0.2;
+}
+
+.user-list__link--cart:hover .user-list__cart-icon {
+  opacity: 1;
+  fill: @seafoam-blue;
+}
+
+@media (max-width: @mobile-width-only) {
+  .user-list__link {
+    box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  }
+
+  .user-list__search-text {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    display: flex;
+    justify-content: flex-start;
+    order: 2;
+    height: 88px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .user-list__item {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .user-list__link--search {
+    padding: 35px 32px;
+    line-height: 18px;
+  }
+
+  .user-list__link--cart {
+    white-space: nowrap;
+    padding: 33px 51px 33px 33px;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .user-list__cart-icon {
+    padding-right: 28px;
+  }
+
+  .user-list__link--cart[href] {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .user-list__link--cart:active {
+    opacity: 0.3;
+  }
+
+  .user-list__search-icon {
+    padding: 0;
+  }
+
+  .user-list__search-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    order: 2;
+    display: flex;
+    width: 35%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .user-list__item {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .user-list__link {
+    line-height: 18px;
+  }
+
+  .user-list__link--search {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-list__link--cart {
+    margin-left: auto;
+    padding: 0 50px 0 35px;
+  }
+}

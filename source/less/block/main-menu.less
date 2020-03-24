@@ -1,0 +1,146 @@
+.main-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.main-menu__logo {
+  display: block;
+  text-align: center;
+}
+
+.main-menu__logo-image {
+  width: 86px;
+  height: 35px;
+  padding: 22px 116px 16px;
+}
+
+.main-menu__logo-image:hover {
+  opacity: 0.6;
+}
+
+.main-menu__logo-image:active {
+  opacity: 0.3;
+}
+
+.main-menu--closed .main-menu__toggle {
+  background-image: url("../img/icon-menu-open.svg");
+}
+
+.main-menu--opened .main-menu__toggle {
+  background-image: url("../img/icon-menu-close.svg");
+}
+
+.main-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__freeship {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-menu__logo {
+    width: 100%;
+  }
+
+  .main-menu__toggle {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 23px;
+    right: 27px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: #ffffff;
+    }
+  }
+
+  .main-menu__list {
+    width: 100%;
+    box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  }
+
+  .main-menu--closed .main-menu__list {
+    display: none;
+  }
+
+  .main-menu--nojs .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu--nojs .site-list,
+  .main-menu--nojs .user-list {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-menu__item a {
+    width: auto;
+  }
+
+  .main-menu__logo {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    padding-top: 22px;
+    width: 40%;
+    text-align: left;
+  }
+
+  .main-menu__logo-image {
+    width: 112px;
+    height: 46px;
+    padding: 0 48px;
+  }
+
+  .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu__freeship {
+    order: 4;
+    display: block;
+    margin: 18px 50px 12px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-menu__item a {
+    width: auto;
+  }
+
+  .main-menu__logo {
+    width: 149px;
+    padding-top: 9px;
+    height: 72px;
+    order: 1;
+  }
+
+  .main-menu__logo-image {
+    width: 149px;
+    height: 72px;
+    padding: 0;
+  }
+
+  .main-menu__freeship {
+    order: 4;
+    display: block;
+    margin-right: 50px;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,158 @@
+.goods-cats-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1150px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-align: left;
+  color: #ffffff;
+}
+
+.goods-cats-list__elem {
+  display: block;
+  width: 100%;
+}
+
+.goods-cats-list__link {
+  display: block;
+  position: relative;
+  padding: 27.5px 0 27.5px 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.goods-cats-list__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.goods-cats-list__name {
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: bold;
+  text-align: left;
+}
+
+.goods-cats-list__elem-icon {
+  position: absolute;
+  display: block;
+  opacity: 0.5;
+  fill: @blue-green;
+  overflow: hidden;
+}
+
+.goods-cats-list__link--interior .goods-cats-list__elem-icon {
+  width: 40px;
+  height: 62px;
+  top: 23px;
+  right: 36px;
+}
+
+.goods-cats-list__link--interior {
+  background-color: @seafoam-blue;
+
+  &:hover,
+  &:active {
+    background-color: @seafoam-blue-two;
+  }
+}
+
+.goods-cats-list__link--toys {
+  background-color: @aqua-marine;
+
+  &:hover,
+  &:active {
+    background-color: @aqua-marine-two;
+  }
+}
+
+.goods-cats-list__link--toys .goods-cats-list__elem-icon {
+  width: 60px;
+  height: 60px;
+  top: 21px;
+  right: 27px;
+}
+
+.goods-cats-list__link:hover .goods-cats-list__elem-icon {
+  opacity: 0.7;
+}
+
+.goods-cats-list__link:active .goods-cats-list__elem-icon {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .goods-cats-list {
+    position: relative;
+    top: -130px;
+    box-sizing: border-box;
+    margin: 0 auto -130px;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    background-color: transparent;
+  }
+
+  .goods-cats-list__link {
+    height: 62px;
+    padding: 25px 0 42px 36px;
+  }
+
+  .goods-cats-list__link:hover .goods-cats-list__elem-icon {
+    top: 10px;
+  }
+
+  .goods-cats-list__name {
+    position: absolute;
+    top: 27px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  .goods-cats-list__link--interior .goods-cats-list__elem-icon {
+    top: 30px;
+    right: 36px;
+  }
+
+  .goods-cats-list__link--toys .goods-cats-list__elem-icon {
+    top: 30px;
+    right: 36px;
+  }
+
+  .goods-cats-list__link:hover::after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 100%;
+    left: 0;
+    top: -10px;
+  }
+
+  .goods-cats-list__link--interior:hover::after {
+    background-color: @seafoam-blue-two;
+  }
+
+  .goods-cats-list__link--toys:hover::after {
+    background-color: @aqua-marine-two;
+  }
+
+  .goods-cats-list__elem {
+    display: block;
+    width: 50%;
+  }
+
+  .goods-cats-list__link:hover .goods-cats-list__name {
+    top: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goods-cats-list {
+    margin: 0 auto -130px;
+  }
+}

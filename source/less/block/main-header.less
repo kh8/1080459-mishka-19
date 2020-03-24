@@ -1,0 +1,26 @@
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  font-family: "OpenSans", "Arial", sans-serif;
+  background-color: #ffffff;
+}
+
+.main-header__menu {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header--index {
+    background: linear-gradient(to top, #f9f9f9 53px, rgba(0, 0, 0, 0.102) 53px, rgba(0, 0, 0, 0.102) 54px, #ffffff 54px);
+  }
+
+  .main-header--catalog,
+  .main-header--form {
+    background: linear-gradient(to top, #f1f1f1 53px, rgba(0, 0, 0, 0.102) 53px, rgba(0, 0, 0, 0.102) 54px, #ffffff 54px);
+  }
+}
