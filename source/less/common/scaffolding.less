@@ -1,0 +1,64 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: @greyish-brown;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.button {
+  display: block;
+  padding: 14px 0;
+  border: 2px solid @greyish-brown;
+  background-color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: @greyish-brown;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: @greyish-brown;
+  color: #ffffff;
+}
+
+.button:active {
+  background-color: @greyish-brown;
+  color: rgba(255, 255, 255, 0.3);
+}

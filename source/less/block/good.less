@@ -1,0 +1,344 @@
+.good {
+  background-color: #ffffff;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.good__info {
+  padding: 0 28px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.good__title {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: left;
+  color: black;
+}
+
+.good__title--card {
+  margin: 20px 0 6px 0;
+}
+
+.good__link {
+  text-decoration: none;
+}
+
+.good__descr {
+  display: block;
+  margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 2.31;
+  text-align: left;
+  color: @greyish-brown;
+}
+
+.good__descr--card {
+  margin-bottom: 20px;
+}
+
+.good:hover .good__title--card {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.good:active .good__title--card {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.good__price-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px 0 27px;
+  border-top: 1px solid @white-four;
+}
+
+.good__price {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: left;
+  color: black;
+}
+
+.good__buy-btn {
+  width: 20px;
+  height: 20px;
+}
+
+.good__buy-btn-icon {
+  opacity: 0.2;
+  overflow: hidden;
+}
+
+.good:hover .good__buy-btn-icon {
+  opacity: 1;
+  fill: @seafoam-blue;
+}
+
+.good:active .good__buy-btn-icon {
+  opacity: 0.3;
+  fill: @seafoam-blue;
+}
+
+.good--of-the-day {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px 30px 40px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+}
+
+.good__title--of-the-day {
+  align-self: flex-start;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  color: #000000;
+}
+
+.good__sticker--of-the-day {
+  order: 1;
+  align-self: flex-start;
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: left;
+  text-transform: uppercase;
+  color: @seafoam-blue;
+}
+
+.good__descr--of-the-day {
+  order: 2;
+  padding: 0 0 15px;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  text-align: left;
+  color: #444444;
+}
+
+.good__parameters-table--of-the-day {
+  order: 3;
+  width: 100%;
+  line-height: 1.33;
+  max-width: 300px;
+  text-align: left;
+  padding: 20px 0;
+  border-collapse: collapse;
+}
+
+.good__parameters-table--of-the-day td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.good__image-picture--of-the-day {
+  order: 4;
+  margin-top: 28px;
+}
+
+.good__image--of-the-day {
+  width: 260px;
+  height: 315px;
+}
+
+.good__price--of-the-day {
+  display: block;
+  order: 5;
+  margin: 18px 0 26px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: center;
+  color: #444444;
+}
+
+.good__buy-btn--of-the-day {
+  order: 6;
+  width: 256px;
+}
+
+@media (min-width: @tablet-width) {
+  .good__image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .good__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .good__title--card {
+    margin: 25px 0 6px;
+  }
+
+  .good__descr {
+    font-size: 15px;
+    line-height: 2;
+    padding: 0 0 10px;
+  }
+
+  .good__price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .good--of-the-day {
+    position: relative;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 35px 50px 70px;
+    background-size: auto 15px;
+  }
+
+  .good__title--of-the-day {
+    order: 1;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    text-align: left;
+    color: #000000;
+  }
+
+  .good__sticker--of-the-day {
+    order: 0;
+    position: absolute;
+    width: 70px;
+    right: 10%;
+    top: 47px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .good__descr--of-the-day {
+    order: 2;
+    width: 45%;
+    padding: 45px 0 25px;
+    margin-top: 0;
+    font-size: 17px;
+  }
+
+  .good__parameters-table--of-the-day {
+    order: 3;
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  .good__price--of-the-day {
+    order: 4;
+    width: 45%;
+    margin: 25px 0 34px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: #444444;
+  }
+
+  .good__buy-btn--of-the-day {
+    width: 288px;
+    order: 5;
+  }
+
+  .good__image-picture--of-the-day {
+    position: absolute;
+    margin: 0;
+    bottom: 70px;
+    width: 333px;
+    height: 404px;
+    right: 50px;
+    max-width: 50%;
+    order: 6;
+  }
+
+  .good__image--of-the-day {
+    width: 333px;
+    height: 404px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .good__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .good--of-the-day {
+    position: relative;
+    align-items: flex-start;
+    width: 100%;
+    padding: 115px 50px 100px 225px;
+    background-repeat: no-repeat;
+    background-size: 90% 23px;
+  }
+
+  .good__title--of-the-day {
+    z-index: 1;
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+    text-align: left;
+    color: #000000;
+  }
+
+  .good__sticker--of-the-day {
+    position: absolute;
+    left: 95px;
+    top: 130px;
+  }
+
+  .good__descr--of-the-day {
+    padding: 45px 0 48px;
+    font-size: 17px;
+    line-height: 1.76;
+    width: 33%;
+  }
+
+  .good__descr--card {
+    margin-bottom: 0;
+    padding: 0 0 15px;
+  }
+
+  .good__image--of-the-day {
+    width: 525px;
+    height: 636px;
+  }
+
+  .good__parameters-table--of-the-day {
+    width: 33%;
+  }
+
+  .good__image-picture--of-the-day {
+    z-index: 0;
+    align-self: flex-end;
+    width: 525px;
+    height: 636px;
+    max-width: 100%;
+    margin-top: 0;
+    top: 60px;
+  }
+
+  .good__price--of-the-day {
+    width: 33%;
+    margin: 80px 0 34px;
+  }
+
+  .good__buy-btn--of-the-day {
+    width: 288px;
+  }
+}
