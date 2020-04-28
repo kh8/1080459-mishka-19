@@ -3,7 +3,7 @@
   max-width: 1150px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 10% 50px;
+  padding: 0 30px 50px;
   font-family: "OpenSans", "Arial", sans-serif;
   text-align: left;
 }
@@ -40,7 +40,8 @@
 
 .feedback__author {
   display: block;
-  margin-top: 26px;
+  margin-top: 27px;
+  margin-bottom: 4px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
@@ -63,13 +64,13 @@
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  padding: 33px 0 36px;
+  padding: 30px 0 38px;
 }
 
 .feedback__pagination-btn {
   width: 50%;
   height: 26px;
-  padding: 13px 0;
+  padding: 12px 0;
   display: block;
   border: solid 1px @white-four;
   text-align: center;
@@ -90,7 +91,7 @@
 
 @media (min-width: @tablet-width) {
   .feedback {
-    padding: 77px 45px 130px;
+    padding: 77px 48px 130px;
   }
 
   .feedback::before {
@@ -99,7 +100,7 @@
     width: 350px;
     height: 457px;
     left: 0;
-    top: 0;
+    top: 1px;
     z-index: -1;
     background-image: url("../img/review@1x.jpg");
 
@@ -133,7 +134,8 @@
   }
 
   .feedback__author {
-    margin-top: 10px;
+    margin-top: 13px;
+    margin-bottom: 5px;
     font-size: 18px;
     line-height: 1.33;
   }
@@ -147,13 +149,13 @@
   }
 
   .feedback__pagination-btn {
-    padding-right: 30px;
+    padding-right: 37px;
     border: none;
   }
 
   .feedback__write-btn {
     position: absolute;
-    width: 170px;
+    width: 175px;
     right: 50px;
     top: 80px;
     font-size: 17px;

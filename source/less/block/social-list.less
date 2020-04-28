@@ -1,10 +1,11 @@
 .social-list {
   display: flex;
   flex-grow: 1;
-  width: 142px;
+  width: 260px;
   justify-content: space-between;
-  padding: 22px 0;
+  padding: 22px 60px;
   border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
   list-style: none;
   font-family: "OpenSans", "Arial", sans-serif;
 }
@@ -32,18 +33,10 @@
 
 @media (min-width: @tablet-width) {
   .social-list {
-    width: 140px;
+    width: 220px;
     margin: 0;
     padding: 0 0 0 80px;
     border: none;
     flex-grow: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .social-list {
-    max-width: 180px;
-    padding: 0 0 0 70px;
-    margin: 0;
   }
 }
