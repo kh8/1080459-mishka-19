@@ -1,7 +1,6 @@
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -91,7 +90,7 @@
 
 @media (min-width: @tablet-width) {
   .features-list {
-    height: 490px;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 1.1;
   }
@@ -100,6 +99,30 @@
     max-height: 50%;
     width: 50%;
     margin-bottom: 58px;
+  }
+
+  .features-list__item--eco {
+    order: 0;
+  }
+
+  .features-list__item--love {
+    order: 1;
+  }
+
+  .features-list__item--scan {
+    order: 2;
+  }
+
+  .features-list__item--our {
+    order: 3;
+  }
+
+  .features-list__item--like {
+    order: 4;
+  }
+
+  .features-list__item--gift {
+    order: 5;
   }
 
   .features-list__link {
@@ -142,8 +165,8 @@
 
 @media (min-width: @desktop-width) {
   .features-list {
+    margin-bottom: 31px;
     align-content: flex-start;
-    height: 496px;
   }
 
   .features-list__item {

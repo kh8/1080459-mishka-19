@@ -57,7 +57,7 @@
 
 @media (min-width: @desktop-width) {
   .goods-list {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
     box-sizing: border-box;
     width: 100%;
@@ -69,6 +69,11 @@
     flex-direction: column;
     width: 316px;
     padding: 0;
+    margin-right: 48px;
+  }
+
+  .goods-list__item:nth-child(3n) {
+    margin-right: 0;
   }
 
   .goods-list__picture {
